@@ -3,7 +3,7 @@
 
 ### 1. Apakah Kegunaan JSON pada REST API?
 
-JSIN adalah sebagai format Standard yang dapat dibaca oleh manusia untuk pertukaran data yang didalamnya berisi pasangan antara key dan value
+JSON adalah sebagai format Standard yang dapat dibaca oleh manusia untuk pertukaran data yang didalamnya berisi pasangan antara key dan value
 source: https://en.wikipedia.org/wiki/JSON
 
 jadi kegunaan JSON dalam REST API adalah sebagai format standard ketika terjadi pertukaran data antara database/server dan client. Setiap terjadi pertukaran data antara database dan client, data tersebut berbentuk format JSON karena JSON memiliki kelebihan yaitu format pertukarang data yang ringan, sintaks yang sederhana dan jelas, dan dapat digunakan oleh beragam bahasa pemprogramman
@@ -38,3 +38,5 @@ Ini adalah langkah umum untuk semua panggilan API REST:
     - Menampilkan to do list simple
     - tombol logout untuk mengset reducer jadi null dan remove token
 
+### Link deploy
+https://mock-test-eight.vercel.app/login
