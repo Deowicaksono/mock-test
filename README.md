@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# MOCK TEST FSW BINAR
+## DEO WICAKSONO FSW 29
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 1. Apakah Kegunaan JSON pada REST API?
 
-## Available Scripts
+JSIN adalah sebagai format Standard yang dapat dibaca oleh manusia untuk pertukaran data yang didalamnya berisi pasangan antara key dan value
+source: https://en.wikipedia.org/wiki/JSON
 
-In the project directory, you can run:
+jadi kegunaan JSON dalam REST API adalah sebagai format standard ketika terjadi pertukaran data antara database/server dan client. Setiap terjadi pertukaran data antara database dan client, data tersebut berbentuk format JSON karena JSON memiliki kelebihan yaitu format pertukarang data yang ringan, sintaks yang sederhana dan jelas, dan dapat digunakan oleh beragam bahasa pemprogramman
+source: https://www.ayongoding.com/apa-itu-json/
 
-### `npm start`
+### 2. jelaskan bagaimana REST API bekerja
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+RESTful API bekerja dengan cara memanipulasi resource dan representasi. Representasi ini saling dipertukarkan di antara pengguna dan server melalui antarmuka terstandar dan protokol komunikasi tertentu, biasanya HTTP. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Jadi, saat pengguna ingin menggunakan fungsi suatu aplikasi, perangkatnya akan mengirimkan permintaan melalui HTTP ke server. Server akan mencari resource dan mengomunikasikan representasi state sebagai respons kepada pengguna melalui protokol yang sama. Representasi ini bisa dibuat dalam berbagai format, seperti JSON atau XML.
 
-### `npm test`
+Ini adalah langkah umum untuk semua panggilan API REST:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    1. Klien mengirimkan permintaan ke server. Klien mengikuti dokumentasi API untuk memformat permintaan dalam format yang dipahami oleh server.
+    2. Server mengautentikasi klien dan mengonfirmasi bahwa klien memiliki hak untuk membuat permintaan.
+    3. Server menerima permintaan dan memproses secara internal.
+    4 .Server mengembalikan respons kepada klien. Respons berisi informasi yang memberitahu klien jika permintaannya berhasil. Respons juga termasuk informasi apa saja yang diminta klien.
 
-### `npm run build`
+    source: https://aws.amazon.com/id/what-is/restful-api/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### fitur mock test aplikasi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Login Page
+    -Redirect ke "/" kalau ada token
+    -input data berupa Securitynumber
+    -menampilkan alert bila SecurityNumber yang dimasukkan lebih atau kurang dari 4 (harus 4 digit)
+    -bila securityNumber ada didatabase, maka akan mengeset token dan redirect ke "/"
+2. Main Page
+    -Redirect ke "/login" bila tidak ada token
+    -Redirect ke "/login" dan revome token bila token tidak sesuai dengan yang ada di database (token invalid)
+    -Set Reducer user yang sesuai dengan securityNumber token
+    -Menampilkan to do list simple
+    -tombol logout untuk mengset reducer jadi null dan remove token
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
