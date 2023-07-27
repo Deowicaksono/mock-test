@@ -97,24 +97,24 @@ export default function MainPage(){
                         {user && <p className="text-muted">{user.position}</p>}
                 </div>
                 <div className="mb-3 rounded border">
-                    <ul class="list-group rounded-0">
-                    <li class="list-group-item border-0 d-flex align-items-center ps-0">
-                        <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                    <ul className="list-group rounded-0">
+                    <li className="list-group-item border-0 d-flex align-items-center ps-0">
+                        <input className="form-check-input me-3" type="checkbox" value="" aria-label="..." />
                         Task list and assignments
                     </li>
-                    <li class="list-group-item border-0 d-flex align-items-center ps-0">
-                        <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                    <li className="list-group-item border-0 d-flex align-items-center ps-0">
+                        <input className="form-check-input me-3" type="checkbox" value="" aria-label="..." />
                         Set Sprint review date
                     </li>
-                    <li class="list-group-item border-0 d-flex align-items-center ps-0">
-                        <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                    <li className="list-group-item border-0 d-flex align-items-center ps-0">
+                        <input className="form-check-input me-3" type="checkbox" value="" aria-label="..." />
                         Check the Progress with Team
                     </li>
-                    <li class="list-group-item border-0 d-flex align-items-center ps-0">
-                        <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
+                    <li className="list-group-item border-0 d-flex align-items-center ps-0">
+                        <input className="form-check-input me-3" type="checkbox" value="" aria-label="..." />
                         Update the userflow and stories
                     </li>
-                    <li class="list-group-item border-0 d-flex align-items-center ps-0">
+                    <li className="list-group-item border-0 d-flex align-items-center ps-0">
                         <input class="form-check-input me-3" type="checkbox" value="" aria-label="..." />
                         Finish the Project
                     </li>
